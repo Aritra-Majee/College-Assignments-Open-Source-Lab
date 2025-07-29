@@ -1,0 +1,43 @@
+Simple Calculator in C
+Overview
+This is a simple calculator program written in C that performs basic arithmetic operations: addition, subtraction, multiplication, and division.
+
+Code Structure
+Headers & Function Declarations:
+Includes <stdio.h> and declares all functions at the top for clarity.
+
+main() Function:
+Controls the program flow with a loop displaying the menu, taking user input, calling arithmetic functions, and handling errors (e.g., division by zero).
+
+menu() Function:
+Displays the calculator options.
+
+Arithmetic Functions:
+Separate functions for addition, subtraction, multiplication, and division.
+
+Functions Documentation
+Function	Description	Input Parameters	Returns
+menu()	Displays calculator menu options	None	None (prints menu)
+add(a, b)	Returns sum of two integers	int a, int b	int (sum of a and b)
+subtract(a,b)	Returns difference of two integers	int a, int b	int (difference a - b)
+multiply(a,b)	Returns product of two integers	int a, int b	int (product a * b)
+divide(a,b)	Returns quotient as a float, checks division by zero	int a, int b	float (quotient a / b)
+
+How It Works
+Program starts in main().
+
+The menu is displayed using menu().
+
+User selects an operation (1-5).
+
+For operations 1-4, user inputs two integers.
+
+The corresponding arithmetic function is called:
+
+Addition, subtraction, multiplication — perform integer math.
+
+Division — checks if divisor is zero to prevent errors.
+
+The result is printed.
+
+The loop repeats until user selects Exit (5).
